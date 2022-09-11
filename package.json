@@ -6,7 +6,12 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "jest --watchAll",
+    "lint-errors": "prettier -c --write .  && eslint . --ext .js,.jsx,.ts,.tsx --fix --quiet",
+    "lint": "prettier -c --write . && eslint . --ext .js,.jsx,.ts,.tsx --fix --max-warnings=0",
+    "clear-full-cache": "rm -rf node_modules && yarn cache clean && watchman watch-del-all && rm -fr $TMPDIR/haste-map-* && rm -rf $TMPDIR/metro-cache && yarn",
+    "clear-full-cache-ci": "rm -rf node_modules && yarn cache clean && rm -fr $TMPDIR/haste-map-* && rm -rf $TMPDIR/metro-cache && yarn"
   },
   "dependencies": {
     "expo": "~46.0.9",
@@ -20,7 +25,24 @@
     "@babel/core": "^7.12.9",
     "@types/react": "~18.0.14",
     "@types/react-native": "~0.69.1",
-    "typescript": "~4.3.5"
+    "typescript": "~4.3.5",
+    "@react-native-community/eslint-plugin": "^1.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.0.4",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "prettier": "^2.7.1"
   },
   "private": true
 }
