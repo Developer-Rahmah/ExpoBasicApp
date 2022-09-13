@@ -58,7 +58,6 @@ export const RootNavigator: React.FC = () => {
         if (userinfo) {
           dispatch(updateUser(userinfo));
         }
-        console.log("lang is", lang);
         setIsAppReady(true);
       } catch (e) {
         setIsAppReady(true);

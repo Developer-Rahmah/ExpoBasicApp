@@ -1,13 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { RootState } from "../../";
-import { sliceNames } from "../../constants";
+import { createSlice } from '@reduxjs/toolkit';
+import { RootState } from '../../';
+import { sliceNames } from '../../constants';
 export interface AuthState {
   user: any;
-  ACCESS_TOKEN: string | null;
 }
 const initialState: AuthState = {
   user: null,
-  ACCESS_TOKEN: null,
 };
 
 const authSlice = createSlice({
@@ -17,9 +15,7 @@ const authSlice = createSlice({
     updateUser: (state, action) => {
       state.user = action.payload;
     },
-    updateAccessToken: (state, action: { payload: string }) => {
-      state.ACCESS_TOKEN = action.payload;
-    },
+    updateAccessToken: (state, action: { payload: string }) => {},
   },
 });
 

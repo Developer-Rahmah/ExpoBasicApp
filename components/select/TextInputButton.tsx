@@ -34,7 +34,6 @@ const SelectedText = styled.Text`
 `;
 
 export const DatePickerButton: React.FC<TextInputButtonProps> = (props) => {
-  console.log("props.selectedItem", props.selectedItem);
   return (
     <View style={styles.inputContainer}>
       <TouchableOpacity

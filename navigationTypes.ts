@@ -8,6 +8,7 @@ import Routes from 'routes/Routes';
 export type RootStackParamList = {
   [Routes.BottomTabNavigator]: NavigatorScreenParams<BottomTabParamList>;
   [Routes.Profile]: undefined;
+  [Routes.NoInternetConnectionScreen]: undefined;
 };
 export type AuthStackParamsList = {
   Login: undefined;

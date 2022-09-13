@@ -33,7 +33,6 @@ function HomeScreen({ navigation }: HomeScreenProps) {
   useEffect(() => {
     apiRequest(limit);
   }, []);
-  console.log("dddata", data);
   /**
    * Handles refresh.
    */
@@ -84,7 +83,6 @@ function HomeScreen({ navigation }: HomeScreenProps) {
     // constants.
     const fullName =
       (item.name.first || "") + " " + (item.name.last || "").trim();
-    console.log("iteeem", item.picture);
     return (
       <View style={[styles.li, index === 0 && styles.liFirstItem]}>
         <View style={styles.internalLi}>
@@ -98,7 +96,6 @@ function HomeScreen({ navigation }: HomeScreenProps) {
             <View style={styles.liLeftView}>
               <Text style={styles.liTitle} text={fullName} />
             </View>
-            {/* <Text style={styles.dobTxt} text={`${parseInt(moment(item.dob.date).fromNow()) - 1} year ago`} /> */}
             <Text
               style={styles.dobTxt}
               text={`${MomentHelper.getFormatted(item.dob.date, "timeAgo")}`}
