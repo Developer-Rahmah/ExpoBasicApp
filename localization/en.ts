@@ -10,8 +10,9 @@ export const en: Record<string, string> = {
   [LocaleKeys.login.invalidID]: 'invalid ID',
   [LocaleKeys.login.invalidEmail]: 'invalid Email',
   [LocaleKeys.login.invalidPhoneNumber]: 'invalid phone number',
-  [LocaleKeys.common.search]: 'Search',
+  [LocaleKeys.login.fieldRequired]: 'Field Required',
 
+  [LocaleKeys.common.search]: 'Search',
   [LocaleKeys.common.error]: 'Something went wrong!',
   [LocaleKeys.common.goBack]: 'Go back',
   [LocaleKeys.common.home]: 'Home',

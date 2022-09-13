@@ -16,19 +16,6 @@ const common = {
   error: 'common-error',
 };
 
-const homeScreen = {
-  helloUser: 'hello-user',
-  upcomingEvent: 'upcoming-event',
-  featuredSpeaker: 'featured-speaker',
-  crowdfundingDeals: 'crowdfunding-deals',
-  memberProductPerks: 'member-product-perks',
-  cultureNews: 'culture-news',
-  totalRaised: 'total-raised',
-  totalOffering: 'total-offering',
-  minInvest: 'min-invest',
-  learnMore: 'learn-more',
-};
-
 const login = {
   email: 'login-email',
   id: 'login-id',
@@ -40,6 +27,7 @@ const login = {
   signUp: 'login-signUp',
   welcome: 'login-welcome',
   logout: 'login-logout',
+  fieldRequired: 'login-fieldRequired',
 };
 
 const profile = {
@@ -48,7 +36,6 @@ const profile = {
 
 export const LocaleKeys = {
   login,
-  homeScreen,
   profile,
   common,
 };

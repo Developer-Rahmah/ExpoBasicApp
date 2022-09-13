@@ -11,6 +11,7 @@ export const ar: Record<string, string> = {
 
   [LocaleKeys.login.signUp]: 'انشاء حساب',
   [LocaleKeys.login.welcome]: 'مرحبا',
+  [LocaleKeys.login.fieldRequired]: 'الحقل مطلوب',
 
   [LocaleKeys.common.error]: 'عذرا حدث خطأ ما',
   [LocaleKeys.common.goBack]: 'رجوع',
